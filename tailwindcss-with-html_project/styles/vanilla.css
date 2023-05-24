@@ -1,0 +1,28 @@
+/* ========================================================
+global resets
+======================================================== */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* ========================================================
+custom styles
+======================================================== */
+
+.main-parent {
+  background-color: black;
+  min-height: 100vh;
+  width: 100%;
+  color: white;
+  width: 75%;
+  margin: 0 auto;
+  padding: 0 60px;
+}
+
+.main-parent h1 {
+  text-align: center;
+  padding: 1rem;
+}

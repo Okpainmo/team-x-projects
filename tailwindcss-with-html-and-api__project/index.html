@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- style import-->
+    <link rel="stylesheet" href="./styles/dist/main-output.css" />
+
+    <!-- title-->
+    <title>
+      Home | taiilwind css with vanilla html project with API integrations
+    </title>
+  </head>
+  <body>
+    <main class="main-wrapper bg-blue-50 min-h-screen pb-[100px]">
+      <div
+        class="wrapper-2_shadow bg-blue-50 px-3 pt-6 pb-10 sm:px-20 md:px-8 xl:px-20"
+      >
+        <nav>
+          <ul class="items-center">
+            <li class="flex gap-3 items-center">
+              <span class="font-bold text-[18px]">Top Software Engineers</span>
+              <div
+                class="px-2 py-1 bg-blue-900 text-white min-w-[20px] rounded font-bold text-center"
+                id="userCount"
+              >
+                X
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <section
+          class="user-cards-wrapper mt-8 sm:mt-20 flex flex-col gap-6 md:mx-auto md:justify-between md:flex md:flex-wrap md:flex-row"
+          id="userCardsWrapper"
+        >
+          <p class="my-40 text-center text-gray-400 text-[20px] mx-auto">
+            loading data...
+          </p>
+        </section>
+      </div>
+    </main>
+
+    <!-- script import-->
+    <script src="./scripts/main.js"></script>
+  </body>
+</html>

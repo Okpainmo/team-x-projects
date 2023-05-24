@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- project tiltle -->
+    <title>Home | taiilwind css with vanilla html project</title>
+
+    <!-- css import(s) -->
+
+    <!-- https://api.github.com/search/repositories?q=created:%3E2023-04-23&sort=stars&order=desc -->
+    <!-- <link rel="stylesheet" href="./styles/vanilla.css" /> -->
+  </head>
+
+  <body>
+    <main class="main-wrapper bg-white min-h-screen">
+      <div class="wrapper-2a_shadow bg-white px-3 pt-6 pb-10 md:px-20 lg:px-40">
+        <nav>
+          <ul class="flex justify-between items-center">
+            <li class="flex gap-3 items-center">
+              <span class="font-bold text-[18px]">Notification</span>
+              <div
+                class="px-2 py-1 bg-blue-900 text-white min-w-[20px] rounded font-bold text-center"
+              >
+                3
+              </div>
+            </li>
+            <li>Mark all as read</li>
+          </ul>
+        </nav>
+        <section class="user-cards-wrapper mt-5 flex flex-col gap-3">
+          <div class="card bg-blue-50 rounded p-3">
+            <div class="image-wrapper flex items-center gap-3">
+              <img
+                src="./assets/images/avatar-mark-webber.webp"
+                alt="user-avatar"
+                style="width: 50px; height: 50px"
+              />
+              <div class="notification-text-wrapper flex flex-col">
+                <div class="text-[12px]">
+                  <span class="font-bold text-blue-900">Mark Webber</span>
+                  reacted to your recent post
+                  <span class="font-bold"> My first tournament today!</span>
+                </div>
+                <span class="text=gray-500">1m ago </span>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
