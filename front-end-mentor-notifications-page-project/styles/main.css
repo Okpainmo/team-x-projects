@@ -1,0 +1,82 @@
+/* global resets */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 16px;
+}
+
+/* regular css */
+
+body {
+  background-color: hsl(211, 68%, 94%);
+}
+
+#parent-wrapper {
+  background-color: white;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center;
+}
+
+.nav-left_notifications-count {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  font-weight: bold;
+}
+
+.nav-left_notifications-count .count {
+  background-color: hsl(219, 85%, 26%);
+  padding: 7px;
+  color: white;
+}
+
+#nav-right_mark-all {
+  color: grey;
+}
+
+.pseudo-starter:after {
+  content: '';
+  background-color: hsl(1, 90%, 64%);
+  width: 8px;
+  height: 8px;
+  margin-left: 5px;
+  border-radius: 100%;
+  display: inline-block;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+@media screen and (max-width: 600px) {
+  #parent-wrapper {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  #parent-wrapper {
+    width: 75%;
+  }
+
+  body {
+    padding: 100px 0;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  #parent-wrapper {
+    width: 60%;
+  }
+}
