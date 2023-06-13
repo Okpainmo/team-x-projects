@@ -1,28 +1,35 @@
+// variables
 const cardsWrapper = document.getElementById('userCardsWrapper')
-const userCount = document.getElementById('userCount')
+const userTally = document.getElementById('userCount')
 
+// const temporaryContent = window.document.querySelector(".only-class")
+// const switcher = window.document.getElementById("userCount")
 
+// fetch user data - async/await
 
-async function getData() {
-    const url = 'https://jsonplaceholder.typicode.com/users'
-    const response = await fetch(url)
-    const data = await response.json()
-    console.log(data)
+// const nameArray = [
+//   "John", "Esther", "Abigail", "Andrew"
+// ]
 
-    // fetch('https://jsonplaceholder.typicode.com/users')
-    //   .then(response => response.json())
-    //   .then(json => console.log(json))
+// console.log(nameArray.join("+"))
 
-    userCount.innerHTML = data.length
+const handleUsers = async function() {
+  const url = "https://jsonplaceholder.typicode.com/users"
+  const response = await fetch(url)
+  const data = await response.json()
+  // console.log(data)
 
+  if (data) {
     const users = data.map(
-        (each) => {
-            
-            const avatarAlphabet = each.username.slice(0, 1).toUpperCase()
-            const { phone, website, email } = each
+      (each) => {
 
-                return `
-                <div class="card bg-white rounded p-5 sm:w-[80%] sm:mx-auto md:mx-0 md:w-[45%] lg:w-[30%]">
+         const avatarAlphabet = each.username.slice(0, 1).toUpperCase()
+        const { phone, website, email } = each
+        
+        return `
+      <div
+            class="card bg-white rounded p-5 sm:w-[80%] sm:mx-auto md:mx-0 md:w-[45%] lg:w-[30%]"
+          >
             <section class="image-wrapper flex justify-between items-center">
               <div
                 class="user_image bg-pink-200 w-[50px] h-[50px] rounded-full font-bold text-center text-[25px] p-[5px]"
@@ -42,7 +49,10 @@ async function getData() {
               </div>
             </section>
             <section class="mt-3 text-[14px]">
-              Software engineer at @<span class="underline">${each.company.name}</span> <br />
+              Software engineer at @<span class="underline"
+                >${each.company.name}</span
+              >
+              <br />
               ${each.company.catchPhrase}, ${each.company.bs}
             </section>
             <section class="mt-4 text-gray-400 font-bold text-[10px] flex">
@@ -55,17 +65,17 @@ async function getData() {
               ><span>${website}</span>
             </section>
           </div>
-                `
-        }
-       )
+        `
+     }
+    )
+    
 
-    cardsWrapper.innerHTML = users.join('')
-}
+    cardsWrapper.innerHTML = users.join(" ")
+    userTally.innerHTML = users.length
+ }
 
-window.addEventListener(
-    'DOMContentLoaded', () => {
-       getData()
-    }
-)
+} 
 
+
+handleUsers()
 

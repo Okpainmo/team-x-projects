@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- page title -->
+    <title>Kripta - do with crypto with ease</title>
+
+    <!-- css import  -->
+    <link rel="stylesheet" href="./styles/home.css" />
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="top-nav">
+        <div class="nav-left">
+          <div class="logo-wrapper">Kripta</div>
+          <ul>
+            <li>Token</li>
+            <li>P2P</li>
+            <li>About</li>
+          </ul>
+        </div>
+        <div class="nav-right connect-btn-wrapper">
+          <button class="connect-wallet-btn">Connect wallet</button>
+        </div>
+      </nav>
+    </header>
+    <main class="main-body">
+      <section class="project-intro-text-wrapper">
+        <span> Send Ethereum with ease on Kripta.</span>
+        <span>
+          Kpyta is the world's leading P2P platform of the EVM ecosystem.
+        </span>
+      </section>
+      <section class="function-area">
+        <div class="wallet-card">
+          <section class="wallet-card-icon-wrapper">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M21 12a2.25 2.25 0 00-2.25-2.25H15a3 3 0 11-6 0H5.25A2.25 2.25 0 003 12m18 0v6a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 18v-6m18 0V9M3 12V9m18 0a2.25 2.25 0 00-2.25-2.25H5.25A2.25 2.25 0 003 9m18 0V6a2.25 2.25 0 00-2.25-2.25H5.25A2.25 2.25 0 003 6v3"
+              />
+            </svg>
+          </section>
+          <section class="wallet-card-texts-wrapper">
+            <span class="wallet-address">0x1232....12232</span>
+            <span class="wallet-address">Ethereum</span>
+          </section>
+        </div>
+        <div class="function-form-wrapper">
+          <form action="#">
+            <input type="text" placeholder="reciever address" />
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+              placeholder="attach a message for the reciever"
+            ></textarea>
+            <button class="tranfer-btn">Send Ethereum</button>
+          </form>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,171 @@
+/* global resets */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+/* customized google font family */
+/* .pjs-font {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+} */
+
+body {
+  background-color: #131325;
+  color: white;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.top-nav {
+  width: 70%;
+  margin: 0 auto;
+  padding: 25px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-left {
+  display: flex;
+  gap: 100px;
+  align-items: center;
+}
+
+.nav-left ul {
+  display: flex;
+  gap: 50px;
+}
+
+.nav-left li {
+  list-style-type: none;
+}
+
+.logo-wrapper {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.connect-wallet-btn {
+  background: #5656d3;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 15px 20px;
+  border-radius: 10px;
+  border: none;
+  color: white;
+}
+
+.main-body {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.project-intro-text-wrapper {
+  padding-top: 250px;
+  width: 35%;
+  display: flex;
+  gap: 25px;
+  flex-direction: column;
+}
+
+.project-intro-text-wrapper span:first-child {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.project-intro-text-wrapper span:last-child {
+  font-size: 18px;
+  line-height: 35px;
+}
+
+.function-area {
+  width: 50%;
+  padding-top: 120px;
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+}
+
+.wallet-card {
+  width: 350px;
+  height: 200px;
+  background-color: rgba(203, 190, 190, 0.95);
+  margin: auto;
+  border-radius: 12px;
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.wallet-card-icon-wrapper {
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  border: 2px solid white;
+  padding: 10.5px;
+}
+
+.wallet-card-icon-wrapper svg {
+  width: 25px;
+}
+
+.wallet-card-texts-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.wallet-card-texts-wrapper span:last-child {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.function-form-wrapper {
+  width: 400px;
+  min-height: 250px;
+  background-color: rgba(203, 190, 190, 0.95);
+  margin: auto;
+  border-radius: 12px;
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
+  padding: 25px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.function-form-wrapper form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.function-form-wrapper input,
+.function-form-wrapper textarea {
+  border: 1px #c5bcbc solid;
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 15px;
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
+  border-radius: 7px;
+}
+
+.function-form-wrapper input:focus,
+.function-form-wrapper textarea:focus {
+  outline: none;
+}
+
+.function-form-wrapper button {
+  background-color: #5656d3;
+  border: none;
+  padding: 15px;
+  border-radius: 7px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+}
